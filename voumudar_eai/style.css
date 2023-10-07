@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit', sans-serif;
+}
+
+:root {
+    --cor-principal: #FDFDFE;
+    --cor-secundaria: #37B5FE;
+    --cor-de-fundo: #000;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--cor-principal);
+}
+
+.principal {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(assets/voumudar.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container_caixa {
+    width: 38vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 9% 4%;
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 2em 5em;
+}
+
+.titulo_principal {
+    text-align: center;
+    font-size: 1.75em;
+    font-weight: bold;
+}
+
+.botao_redes {
+    width: 50%;
+    background-color: var(--cor-secundaria);
+    color: #FDFDFE;
+    padding: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 1px solid var(--cor-principal);
+    font-weight: 600;
+    font-size: 17px;
+    margin-top: 10px;
+    text-align: center;
+    transition: .3s;
+}
+
+
+
+.conteudo_descricao {
+    width: 38vw;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    transition: .3s;
+}
+
+.secundario {
+    width: 96vw;
+    margin: 2em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4%;
+    transition: .3s;
+}
+
+.descricao_titulo {
+    font-size: 3em;
+    font-weight: 700;
+    color: var(--cor-secundaria);
+}
+
+.descricao_paragrafo {
+    font-weight: 400;
+}
+
+.secundario_botao{
+    display: inline-block;
+}
+
+.patrocinadores_titulo {
+    color: var(--cor-secundaria);
+    font-size: 40px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    transition: .3s;
+}
+
+.patrocinadores_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.patrocinadores_lista {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+    transition: .3s;
+    list-style: none;
+}
+
+.patrocinadores {
+    text-align: center;
+}
+
+.rodape {
+    width: 100vw;
+    padding: 3em 0;
+    margin: auto;
+    text-align: center;
+    background-color: var(--cor-secundaria);
+}
+
+.secundario:hover {
+    transform: translate3d(0, -10px, 0) scale(1.01);
+    transition: .3s;
+}
+
+.botao_redes:hover {
+    background-color: var(--cor-de-fundo);
+    color: var(--cor-secundaria);
+    border-color: var(--cor-secundaria);
+    transform: translate3d(0, -10px, 0) scale(1.01);
+    transition: .3s;
+}
+
+.botao_redes:active {
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria);
+}
+
+.patrocinadores_lista:hover {
+    transform: translate3d(0, -10px, 0) scale(1.01);
+    transition: .3s;
+}
+
+.container_imagem:hover {
+    transform: translate3d(0, -10px, 0) scale(1.01);
+    transition: .3s;
+}
+
+.conteudo_descricao:hover {
+    transform: translate3d(0, -10px, 0) scale(1.01);
+    transition: .3s;
+}
+
+.patrocinadores_titulo:hover {
+    color: var(--cor-principal);
+    transform: translate3d(0, -10px, 0) scale(1.01);
+    transition: .3s;
+}
+
+@media (max-width: 896px) and (orientation: portrait) {
+    :root {
+        font-size: 0.8em;
+    }
+
+
+    .principal {
+        background: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container {
+        margin: 0;
+    }
+
+    .container_caixa {
+        margin: auto;
+        width: 90vw;
+        align-items: center;
+    }
+
+    .secundario {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 2em;
+    }
+
+    section > img {
+        width: 70vw;
+    }
+
+    .conteudo_descricao {
+        width: 80vw;
+    }
+
+    .terceira {
+        flex-direction: column-reverse;
+    }
+
+    .patrocinadores_img {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rodape {
+        flex-direction: column;
+    }
+
+.patrocinadores_titulo {
+    font-size: 2em;
+    margin-bottom: 0;
+    }
+
+    .patrocinadores_lista {
+        margin: 1em 0;
+    }
+}
+
+
+
+
+
+
+  
